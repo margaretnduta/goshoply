@@ -1,0 +1,108 @@
+
+body {
+    font-family: "Poppims", sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(90deg,#406E8E,white);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    background-color: white;
+    margin-top: 20px;
+    color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.label {
+    font-size: 1em;
+    color: #333;
+    display: block;
+    margin-bottom: 8px;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 20px;
+    border: 1px orangered;
+    border-radius: 4px;
+    font-size: 1em;
+    border: black 1px solid;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: orangered;
+    outline: none;
+    border-radius: 40px;
+}
+.login{
+    display: flex;
+    align-items: center;
+   
+}
+.login img{
+    height:400px;
+}
+.heading{
+    display: flex;
+    align-items: center;
+    color: white;
+}
+#heading-image{
+    border-radius: 50%;
+}
+.login-button {
+    width: 100%;
+    padding: 12px;
+    background-color:#406E8E;
+    border: none;
+    color: white;
+    font-size: 1.2em;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background-color: whitesmoke;
+    color: black;
+    transition: 0.5s ease-in-out;
+}
+
+.sign-up {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.sign-up a {
+    color: #023047;
+    text-decoration: none;
+}
+
+.sign-up a:hover {
+    text-decoration:underline;
+}

@@ -1,0 +1,144 @@
+
+
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body and Fonts */
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    color: #00274d;
+    
+  }
+  
+  /* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #00274d;
+  padding: 10px 20px;
+}
+/* Logo Styling */
+.navbar .logo img {
+  width: 100px; /* Adjust logo size */
+  height: auto;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+.nav-links li {
+  margin-left: 20px;
+}
+.nav-links a {
+  text-decoration: none;
+  color:white;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  transition: color 0.3s;
+}
+.nav-links a:hover {
+  color: white;
+}
+
+/* Responsive Design (for small screens) */
+@media (max-width: 768px) {
+  .navbar {
+      flex-direction: row;
+      align-items: flex-start;
+  }
+
+  .nav-links {
+      flex-direction: row;
+      width: 100%;
+  }
+
+  .nav-links li {
+      margin-left: 0;
+      margin-top: 10px;
+  }
+
+  .nav-links a {
+      padding: 10px 15px;
+      width: 100%;
+      text-align: left;
+  }
+}
+
+  /* Categories Section */
+  .categories {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    background: linear-gradient(135deg, #00274d, #81c784)
+    
+  }
+  
+  .categories h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color:#fff;
+  }
+  
+  .categories-description {
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 40px;
+  }
+  
+  .category-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .category-item {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s, transform 1s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .category-item img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+  
+  .category-item h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .category-item p {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  
+  
+  .scroll-to-top:hover {
+    background-color: #ffcc00;
+    color: #00274d;
+    transform: scale(1.1);
+  }
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #00274d;
+    color: white;
+    margin-top: 40px;
+  }  

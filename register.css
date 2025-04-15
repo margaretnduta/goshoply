@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Poppins",sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin:auto;
+    background: linear-gradient(90deg,#406E8E,white);
+    
+}
+.wrapper{
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+}
+.logo{
+    display: flex;
+    text-align: center;
+    margin-top: 80px;
+}
+.logo img{
+   max-width: 100%;
+   height: auto;
+   border-radius: 50%;
+   max-width: 100px;
+}
+
+
+.form_section{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: white;
+    padding: 40px;
+    width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    
+
+}
+.gender{
+    display: flex;
+    justify-content: space-between;
+}
+ /* Circular style for radio buttons */
+ input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%; /* Makes the radio button circular */
+    border: 2px solid #007bff; /* Adds a blue border */
+    background-color: #fff; /* White background */
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+/* When the radio button is checked, change the background to blue */
+input[type="radio"]:checked {
+    background-color: #007bff;
+    border-color: #0056b3;
+}
+
+/* Style the label to line up next to the circular radio buttons */
+.radio-option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Add hover effect for better user interaction */
+input[type="radio"]:hover {
+    background-color: #e6f2ff;
+    border-color: #0056b3;
+}
+
+.name{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.name div{
+    width:150px;
+}
+
+.name input{
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+.email.address{
+    margin-bottom: 20px;
+}
+.email.address input{
+    width:100%;
+    padding:10px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border:1px solid #ccc;
+
+}
+label{
+    font-size: 16px;
+    color:#333;
+    margin-bottom: 5px;
+    display: block;
+}
+/* Container for phone number with country code */
+.dropdown-container {
+    display: flex;
+    align-items: center;
+}
+
+.country-dropdown {
+    display: flex;
+    align-items: center;
+    width: 30%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    background-color: white;
+}
+
+.country-dropdown img {
+    width: 20px;
+    height: 15px;
+    margin-right: 8px;
+}
+
+.phone-input {
+    width: 65%;
+    padding: 10px;
+    border-radius: 4px;
+    margin-left: 15px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+#kenya_flag{
+    width:20px;
+    height:15px;
+    margin-right: 8px;
+    margin-left: 2px;
+}
+.disclaimer-message
+{
+   margin-top : 5px;
+    font-family: "Poppins",sans-serif;
+    font-size: 14px;
+    color: #555;
+}
+ /* Container that holds both password fields and the disclaimer message */
+.password-container{
+    display: flex;
+    flex-direction: column;/*stack the fields vertically*/
+    gap: 10px; /*space between the password fields and disclaimer message */
+}
+ /* styling for the password input field */
+ .password-input,
+ .confirm-password-input{
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+ }
+ .terms-and-conditions{
+    font-size: 14px;
+    font-family: "Poppins",sans-serif;
+    margin-top: 5px;
+    color: #555;
+ }
+ #log-in{
+    margin-top: 10px;
+    text-align: center;
+    font-family: "Poppins",sans-serif;
+    font-weight: 400;
+ }
+ #log-in:a{
+    color: #007bff;
+ }
+ .submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ #btn{
+    border-radius: 5px;
+    width: 250px;
+    text-align: center;
+    background-color: #2f2983;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+ }
+ #btn:hover{
+    background-color: #050320;
+ }

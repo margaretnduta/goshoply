@@ -1,0 +1,339 @@
+/* CSS for E-Commerce Homepage */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header h1{
+  font-family: 'Lobster';
+}
+header{
+  background:linear-gradient( 90deg, #406E8E ,#fff);
+  display: flex;
+  padding: 5px;
+  gap:500px;
+  height:100px;
+  justify-content: center;
+  position:fixed;
+  width:100vw;
+  top:0px;
+  margin-bottom:20px ;
+  z-index:1000;
+  
+}
+nav>ul{
+  display: flex;
+  justify-content: space-around;
+ 
+}
+#icon{
+  height:30px;
+  width:30px;
+  border-radius:50%;
+}
+li{
+  list-style: none;
+  margin:0 15px;
+ 
+}
+a{
+  text-decoration: none;
+  font-size: 18px;
+  color:black;
+  font-weight: bold;
+}
+#navbar:hover{
+  background-color: #8EA8C3;
+  color:white;
+}
+.body {
+  display: flex;
+  /* This makes the sidebar and content appear side by side */
+  justify-content: space-between;
+  /* Ensures there's space between the sidebar and content */
+  padding: 20px;
+}
+
+/* Sidebar */
+.side-bar {
+  width: 250px;
+  /* Set a fixed width for the sidebar */
+  background-color: #f4f4f4;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.side-bar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.side-bar ul a {
+  text-decoration: none;
+  color: black;
+}
+
+.side-bar ul li {
+  padding: 10px;
+  font-size: 18px;
+}
+
+.side-bar ul li:hover {
+  background-color: #00274d;
+  color: #f4f4f4;
+  cursor: pointer;
+}
+
+.advert {
+  width: 100%;
+  /* Makes the image fill the width of its container */
+  height: auto;
+  /* Maintains the aspect ratio */
+  display: block;
+  /* Ensures no unwanted space below the image */
+  border-radius: 8px;
+  /* Optional: gives the image rounded corners */
+  margin-bottom: 20px;
+  /* Optional: adds space below the image */
+
+}
+
+/* Product Category (Image + Content) */
+.product-category {
+  flex-grow: 1;
+  /* This makes the product category take the remaining space */
+  padding: 20px;
+  margin-left: 20px;
+  /* Adds space between sidebar and product category */
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Ensuring the heading and product list are on separate lines */
+.heading {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  /* Adds space below the heading */
+  text-align: center;
+  text-decoration: underline;
+}
+
+.Refrigerator-products {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* Container for the product items */
+.Refrigerator-products {
+  display: flex;
+  flex-wrap: wrap;
+  /* Makes the products stack on smaller screens */
+  justify-content: space-between;
+}
+
+/* Individual product item styling */
+.product-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Soft shadow for a card effect */
+  width: 220px;
+  /* Fixed width for the product card */
+  padding: 15px;
+  text-align: center;
+  /* Centers the content inside the card */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* Smooth transition for hover effect */
+}
+
+.product-item:hover {
+  transform: translateY(-5px);
+  /* Slight lift effect on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  /* Stronger shadow on hover */
+}
+
+/* Product image styling */
+.product-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  /* Rounded corners for the image */
+  margin-bottom: 15px;
+  /* Space below the image */
+}
+
+/* Product title styling */
+.product-item h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  /* Space between title and price */
+  color: #00274d;
+  /* Dark text color for better readability */
+}
+
+/* Price styling */
+.product-item p {
+  font-size: 16px;
+  color: #00274d;
+  /* Green color for price */
+  margin-bottom: 15px;
+  /* Space between price and button */
+  font-weight: bold;
+}
+
+/* Add to Cart button styling */
+.product-item .btn {
+  background-color: #00274d;
+  /* Blue background */
+  color: #fff;
+  /* White text */
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  /* Rounded corners for the button */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  /* Smooth color transition */
+}
+
+.product-item .btn:hover {
+  background-color: black;
+  /* Black on hover */
+}
+
+.product-item .btn:focus {
+  outline: none;
+  /* Removes the focus outline when button is clicked*/
+}
+
+.cookers {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.Microwave-products {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.Washing_machine_products {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.Oven-products {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.Utensils-products {
+  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* Creates 3 equal columns */
+  gap: 20px;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-items: center;
+
+}
+.footer {
+  background:linear-gradient(90deg, #8EA8C3, white );
+  color: black;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.footer-section {
+  flex: 1;
+  min-width: 250px; 
+}
+
+.footer-section h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: black;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 8px 0;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color:black;
+  font-size: 14px;
+}
+
+.footer-section ul li a:hover {
+  color: #fff;
+}
+
+.social-links i {
+  margin-right: 10px;
+}
+
+.social-links a {
+  color:black;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  color: #fff;
+}
+
+/* Footer Bottom Styling */
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color:black;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+#social-logo{
+  height:30px;
+  width:30px;
+}
+
+/* Add some responsiveness */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    min-width: auto;
+    text-align: center;
+  }
+}
+
+
+

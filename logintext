@@ -1,0 +1,22 @@
+<?php
+//connect to php
+$servername="localhost";
+$username="root";
+$password="";
+$dbname="go shoply e-commerce";
+//create connection
+$connection=new mysqli($servername,$username,$password,$dbname);
+//check connection
+if($connection->connect_error){
+    die("Connection failed: ".$connection->connect_error);
+}
+if($_SERVER['REQUEST_METHOD']==="POST"){
+    $email=$_POST['email'];
+    $password=$_POST['password'];
+
+    $querry="SELECT * FROM registration where email= '$email' and password='$password'";
+    $result=mysqli_query($connection,$querry);
+    header("Location:home.php");
+
+}
+?>
