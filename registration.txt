@@ -1,0 +1,34 @@
+code to connect to database
+
+<?php
+//connect to php
+$servername="localhost";
+$username="root";
+$password="";
+$dbname="go shoply e-commerce";
+//create connection
+$connection=new mysqli($servername,$username,$password,$dbname);
+//check connection
+if($connection->connect_error){
+    die("Connection failed: ".$connection->connect_error);
+}
+else{
+    if($_SERVER['REQUEST_METHOD']==="POST"){
+        $title=$_POST['title'];
+        $first_name=$_POST['first_name'];
+        $last_name=$_POST['last_name'];
+        $email=$_POST['email'];
+        $phone_number=$_POST['phone_number'];
+        $password=$_POST['password'];
+        $confirm_password=$_POST['confirm_password'];
+                if($confirm_password===$password){
+            $querry="INSERT INTO registration VALUES(?,?,?,?,?,?,'')";
+            $stmt =$connection->prepare($querry);
+            $stmt-> bind_param("ssssss",$first_name,$last_name,$email,$password,$title,$phone_number);
+            $stmt-> execute();
+            header("Location: login.php");
+        }
+}
+        }
+
+?>
